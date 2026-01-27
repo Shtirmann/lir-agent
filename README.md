@@ -1,31 +1,39 @@
 # lir-agent
 
+---
+
 ![License](https://img.shields.io/github/license/Mawwlle/lir-agent?style=flat&logo=opensourceinitiative&logoColor=white&color=blue)
 [![OSA-improved](https://img.shields.io/badge/improved%20by-OSA-yellow)](https://github.com/aimclub/OSA)
 
+---
+
 ## Overview
 
-This project provides an intelligent agent capable of dynamically expanding its own abilities by creating and using new tools as needed. It helps users solve problems by reasoning, acting, and adapting its functionalities in real-time, offering a flexible and self-improving problem-solving assistant.
+lir-agent is an intelligent assistant that enhances its problem-solving capabilities by dynamically creating and using new tools. It adapts in real-time to user needs, offering a flexible and self-improving solution for complex tasks through reasoning and action.
 
-## Demo
-https://github.com/user-attachments/assets/79a93a52-9944-463d-b7e8-41e13ed04579
-
+---
 
 ## Table of Contents
 
-- [Core features](#core-features)
+- [Overview](#overview)
+- [Core Features](#core-features)
 - [Installation](#installation)
+- [Documentation](#documentation)
 - [Contributing](#contributing)
 - [License](#license)
 - [Citation](#citation)
 
-## Core features
+---
 
-1.  **Runtime Tool Creation**: The agent can dynamically create new Python tools at runtime by generating Python code, saving it to a file, importing it as a module, and registering its entrypoint function for later use. This allows the agent to adapt and extend its capabilities on the fly.
-2.  **Dynamic Tool Execution**: The agent can execute any registered tool dynamically by its name, passing arguments as needed. This enables the agent to utilize both pre-defined and newly created tools seamlessly within its workflow.
-3.  **Dependency Management**: The agent includes a tool to install Python packages within its virtual environment. This ensures that any new tools created or used by the agent can have their necessary dependencies met without manual intervention.
-4.  **ReAct Agent Loop**: The agent operates based on a ReAct (Reasoning and Acting) loop, where it follows a Thought → Action → Observation sequence. This structured approach guides the agent in problem-solving, tool creation, and tool usage.
-5.  **LLM Integration (LangChain)**: The agent leverages LangChain for integrating with Large Language Models (LLMs), specifically ChatOpenAI. This allows the agent to understand natural language prompts, reason about tasks, and generate appropriate actions, including tool creation and usage.
+## Core Features
+
+1. **Runtime Tool Creation**: The agent can dynamically create new Python tools at runtime by generating Python code, saving it to a file, importing it as a module, and registering its entrypoint function for later use. This allows the agent to adapt and extend its capabilities on the fly.
+2. **Dynamic Tool Execution**: The agent can execute any registered tool dynamically by its name, passing arguments as needed. This enables the agent to utilize both pre-defined and newly created tools seamlessly within its workflow.
+3. **Dependency Management**: The agent includes a tool to install Python packages within its virtual environment. This ensures that any new tools created or used by the agent can have their necessary dependencies met without manual intervention.
+4. **ReAct Agent Loop**: The agent operates based on a ReAct (Reasoning and Acting) loop, where it follows a Thought → Action → Observation sequence. This structured approach guides the agent in problem-solving, tool creation, and tool usage.
+5. **LLM Integration (LangChain)**: The agent leverages LangChain for integrating with Large Language Models (LLMs), specifically ChatOpenAI. This allows the agent to understand natural language prompts, reason about tasks, and generate appropriate actions, including tool creation and usage.
+
+---
 
 ## Installation
 
@@ -35,31 +43,43 @@ Install lir-agent using one of the following methods:
 
 **Build from source:**
 
-1.  Clone the lir-agent repository:
+1. Clone the lir-agent repository:
+```sh
+git clone https://github.com/Mawwlle/lir-agent
+```
 
-    ```sh
-    git clone https://github.com/Mawwlle/lir-agent
-    ```
+2. Navigate to the project directory:
+```sh
+cd lir-agent
+```
 
-2.  Navigate to the project directory:
+3. Install the project dependencies:
 
-    ```sh
-    cd lir-agent
-    ```
+```sh
+pip install -r requirements.txt
+```
 
-3.  Install the project dependencies:
+---
 
-    ```sh
-    pip install -r requirements.txt
-    ```
+## Documentation
+
+A detailed lir-agent description is available [here]("").
+
+---
 
 ## Contributing
 
--   **[Report Issues](https://github.com/Mawwlle/lir-agent/issues)**: Submit bugs found or log feature requests for the project.
+- **[Report Issues](https://github.com/Mawwlle/lir-agent/issues)**: Submit bugs found or log feature requests for the project.
+
+- **[Submit Pull Requests](https://github.com/Shtirmann/lir-agent/tree/master/.github/CONTRIBUTING.md)**: To learn more about making a contribution to lir-agent.
+
+---
 
 ## License
 
 This project is protected under the MIT License. For more details, refer to the [LICENSE](https://github.com/Mawwlle/lir-agent/tree/master/LICENSE) file.
+
+---
 
 ## Citation
 
